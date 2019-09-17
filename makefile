@@ -1,6 +1,6 @@
 #This is the make file for our OOD Maze Project
 make:
-	javac @sources
+	javac -d bin @sources
 
 run:
 	java Driver
@@ -8,4 +8,3 @@ run:
 clean:
 	rm *.class
 	clear
-
