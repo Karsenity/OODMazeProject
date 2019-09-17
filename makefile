@@ -5,6 +5,9 @@ make:
 run:
 	java Driver
 
+run:
+	javadoc
+
 clean:
 	rm *.class
 	clear
