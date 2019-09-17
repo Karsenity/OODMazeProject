@@ -42,6 +42,9 @@ Ideas for Organisation, Documentation, and Policy is an overview of group policy
 ###  Initial Maze Design
 Initial Maze Design is much more complex and is kept up to date. The version found in the repository might not be the most up to date version.
 
+> Initial Maze Design is still currently being changed. If you are a contributor please look at the team drive for the latest version.
+
+
 **Work in Progress**
 
 
