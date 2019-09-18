@@ -33,10 +33,7 @@ int terminalWidth;
 int terminalHeight;
 
 
-
-
-
-
+public Algorithm alg;
 
 
 /**
@@ -56,6 +53,10 @@ public Square[][] grid;
 public static void Main(String[] args){
 
 
+
+
+
+
 }
 
 
@@ -68,6 +69,7 @@ public static void Main(String[] args){
  * [window produces a window, or a croped frame of the grid to display]
  * @param  x [the x coordinates on which the window will be centered, must be within the range of the width of the grid]
  * @param  y [the y coordinates on which the window will be centered, must be within the range of the width of the grid]
+ * @throws   [throws IndexOutOfBoundsException]
  * @return   [returns a cropped two dimentional array of squares to be passed to ]
  */
 private Square[][] window(int x, int y){
