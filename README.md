@@ -6,7 +6,12 @@ Maze Project for Object-Oriented Design class
 
 A mirror of this project can be found [here](https://git.hunterchasens.com/hchasens/OODMazeProject)
 
-## License
+## Licensing and Legal
+
+All licensing extends to subdocuments, documents, and documentation unless stated otherwise. Our licensing does not extend to dependencies that may be referenced, cloned, or mirrored in this repository or their subdocuments, documents, and documentation. 
+
+Linked documents, FTP/SFTP and other services, servers, and drives that fall under our licensing will have that licensing restated and only fall under our licensing for this project if linked here or otherwise restated in affiliation with New College of Florida and a Contributor.
+
 >Our licensing is under discussion, for now please reference Github's default license.
 
  > ~~We are running on the GNU General Public License v3.0. Review section
@@ -16,7 +21,7 @@ A mirror of this project can be found [here](https://git.hunterchasens.com/hchas
 ## Table of Contents
 
  1. Introduction
- 2. Licensing
+ 2. Licensing and Legal
  3. Table of Contents
  4. Assignment Details
  5. Thought Process
