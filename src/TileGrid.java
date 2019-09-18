@@ -36,7 +36,6 @@ public class TileGrid {
         return grid.get(y).get(x);
     }
 
-    // NOTE: THIS METHOD IS NOT COMPLETELY FUNCTIONAL YET.
     public void updateTileString(int x, int y, int row) {
         Tile t = grid.get(y).get(x);
         int rowsToUpdate = t.getHeight();

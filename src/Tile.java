@@ -42,9 +42,9 @@ public class Tile {
         for (int cy = 0; cy < h; cy++) {
             grid.add(new ArrayList<Character>());
             for (int cx = 0; cx < w; cx++) {
-                if (cx == 0 || cx == 6) { // this is a vertical wall
+                if (cx == 0 || cx == w - 1) { // this is a vertical wall
                     grid.get(cy).add(verticalChar);
-                } else if (cy == 0 || cy == 2) { // this is a horizontal wall
+                } else if (cy == 0 || cy == h - 1) { // this is a horizontal wall
                     grid.get(cy).add(horizontalChar);
                 } else { // this is an empty space
                     grid.get(cy).add(' ');
@@ -82,19 +82,25 @@ public class Tile {
                 // remove northern wall
                 for (int i = 1; i < w - 1; i++) {
                     setCharAt(i, 0, ' ');
-                }   break;
+                }
+                break;
             case 1:
                 // remove eastern wall
-                setCharAt(w - 1, (h - 1) / 2, ' ');
+                for (int i = 1; i < h - 1; i++) {
+                    setCharAt(w - 1, i, ' ');
+                }
                 break;
             case 2:
                 // remove southern wall
                 for (int i = 1; i < w - 1; i++) {
                     setCharAt(i, h - 1, ' ');
-                }   break;
+                }
+                break;
             case 3:
                 // remove western wall
-                setCharAt(0, (h - 1) / 2, ' ');
+                for (int i = 1; i < h - 1; i++) {
+                    setCharAt(0, i, ' ');
+                }
                 break;
             default:
                 break;
@@ -102,36 +108,23 @@ public class Tile {
     }
 
     private void setCharAt(int x, int y, char c) {
-        // this method accounts for removed columns and rows
-        // the below commented code tells neighbors in case of removal of char
-        // that this tile does not own. it doesn't work yet.
-        /*if (y - removedRows < 0) {
+        // this method accounts for removed columns and rows ONLY in the context
+        // of duplication for now
+        if (y - removedRows < 0) {
             // tell the one above us to set the char
             Tile neighborTile = subscribingGrid.getTile(this.x, this.y - 1);
-            y = Math.abs(y - removedRows) + neighborTile.getHeight();
+            y = neighborTile.getHeight() - Math.abs(y - removedRows);
             neighborTile.setCharAt(x, y, c);
         } else if (x - removedColumns < 0) {
             // tell the one to the left of us to set the char
             Tile neighborTile = subscribingGrid.getTile(this.x - 1, this.y);
-            x = Math.abs(x - removedColumns) + neighborTile.getWidth();
-            neighborTile.setCharAt(x, y, c);
-        } else if (x - removedColumns > grid.size() - 1) {
-            // tell the one to the right of us to set the char
-            Tile neighborTile = subscribingGrid.getTile(this.x + 1, this.y);
-            x = Math.abs(x - removedColumns) + neighborTile.getWidth();
-            neighborTile.setCharAt(x, y, c);
-        } else if (y - removedRows > grid.get(0).size() - 1) {
-            // tell the one below us to set the char
-            Tile neighborTile = subscribingGrid.getTile(this.x, this.y + 1);
-            y = Math.abs(y - removedRows) + neighborTile.getHeight();
+            x = neighborTile.getWidth() - Math.abs(x - removedColumns);
             neighborTile.setCharAt(x, y, c);
         } else {
-            ArrayList<Character> xl = grid.get(y - removedRows);
-            xl.set(x - removedColumns, c);
-        }*/
-        ArrayList<Character> row = grid.get(y);
-        row.set(x, c);
-        subscribingGrid.updateTileString(this.x, this.y, y);
+            ArrayList<Character> row = grid.get(y - removedRows);
+            row.set(x - removedColumns, c);
+            subscribingGrid.updateTileString(this.x, this.y, y - removedRows);
+        }
     }
 
     public String getRowString(int r) {
