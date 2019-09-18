@@ -8,7 +8,7 @@ A mirror of this project can be found [here](https://git.hunterchasens.com/hchas
 
 ## Licensing and Legal
 
-All licensing extends to subdocuments, documents, and documentation unless stated otherwise. Our licensing does not extend to dependencies that may be referenced, cloned, or mirrored in this repository or their subdocuments, documents, and documentation. 
+All licensing extends to subdocuments, documents, and documentation unless stated otherwise. Our licensing does not extend to dependencies that may be referenced, cloned, or mirrored in this repository or their subdocuments, documents, and documentation.
 
 Linked documents, FTP/SFTP and other services, servers, and drives that fall under our licensing will have that licensing restated and only fall under our licensing for this project if linked here or otherwise restated in affiliation with New College of Florida and a Contributor.
 
@@ -25,12 +25,12 @@ Linked documents, FTP/SFTP and other services, servers, and drives that fall und
  3. Table of Contents
  4. Assignment Details
  5. Thought Process
- 6. Design
- 7. Classes
+ 6. Classes
+ 7. Design
  8. Files and Organisation
  9. Documentation and Logging
  10. Compiling
- 11. Dependencies 
+ 11. Dependencies
  12. Conclusion
 
 ## Assignment Details
@@ -57,11 +57,15 @@ Initial Maze Design is much more complex and is kept up to date. The version fou
 
 **Work in Progress**
 
+## Classes
 
+### Interfaces
+
+### Abstract Classes
+
+### Classes
 
 ## Design
-
-## Classes
 
 ## Files and Organisation
 
