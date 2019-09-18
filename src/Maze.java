@@ -5,6 +5,13 @@
  * Description
  */
 
+
+
+//This class make an array of squares, this class makes a new array that is smaller,
+// it runs it to the tilegrid class, and the tilegrid class returns a string to be displayed
+
+
+
 class Maze {
 
 
