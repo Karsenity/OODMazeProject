@@ -2,4 +2,5 @@ src/Maze.java
 src/Square.java
 src/TextGenerator.java
 src/Tile.java
-src/TitleGrid.java
+src/TileGrid.java
+src/Algorithm.java

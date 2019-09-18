@@ -102,7 +102,7 @@ private Square[][] window(int x, int y){
                 windowHeight = mazeHeight;
 
 
-        temp = new Square[windowWidth][windowHeight];
+        Square temp[][] = new Square[windowWidth][windowHeight];
 
         //the location of where to start copying
         int startX;
