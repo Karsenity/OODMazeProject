@@ -1,3 +1,6 @@
+/**
+ * @@author Hunter Chasens
+ */
 interface Algorithm {
 
 /**

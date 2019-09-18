@@ -1,3 +1,5 @@
+import java.io.*;
+
 /**
  * @author Hunter Chasens
  * @version 19.09.18
@@ -33,7 +35,13 @@ int terminalWidth;
 int terminalHeight;
 
 
+
+
+/**
+ * the Alorithm used to generate the maze
+ */
 public Algorithm alg;
+
 
 
 /**
@@ -41,9 +49,11 @@ public Algorithm alg;
  */
 public Square[][] grid;
 
-
-
-
+/**
+ * Decleration of TileGrid
+ * you can get the length of the array by using grid[0].length for the width ro grid[1].length for the y
+ */
+public TileGrid tileGrid;
 
 
 /**
@@ -51,13 +61,14 @@ public Square[][] grid;
  * @param args [description]
  */
 public static void Main(String[] args){
+        //define members here
 
 
-
-
-
+        //cetch args here
 
 }
+
+
 
 
 
@@ -130,6 +141,67 @@ private Square[][] window(int x, int y){
 
         return temp;
 }
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * ----------------- Settings/Menu/Save/Load -----------------
+ */
+
+
+
+
+
+/**
+ * [menu displays and runs the main menu]
+ */
+private menu(){
+
+
+}
+
+
+/**
+ * [settingsMenu displays and runs the settings menu]
+ */
+private settingsMenu(){
+
+
+
+}
+
+
+
+private save(){
+        //https://www.tutorialspoint.com/java/java_serialization.htm
+
+}
+
+
+private load(){
+        //https://www.tutorialspoint.com/java/java_serialization.htm
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
