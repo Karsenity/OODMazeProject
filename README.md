@@ -64,6 +64,8 @@ Initial Maze Design is much more complex and is kept up to date. The version fou
 ### Abstract Classes
 
 ### Classes
+#### Maze
+Maze is our driver class. It contains the main method.
 
 ## Design
 
