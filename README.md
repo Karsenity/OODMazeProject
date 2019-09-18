@@ -4,6 +4,9 @@
 ## Introduction
 Maze Project for Object-Oriented Design class
 
+### License
+>Our licensing is under discussion, for now please reference Github's default license.
+
  > ~~We are running on the GNU General Public License v3.0. Review section
  > 15, 16, and 17 of the GNU General Public License v3.0 before use.~~
 
