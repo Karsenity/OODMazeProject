@@ -4,27 +4,29 @@
 ## Introduction
 Maze Project for Object-Oriented Design class
 
-### License
+A mirror of this project can be found [here](https://git.hunterchasens.com/hchasens/OODMazeProject)
+
+## License
 >Our licensing is under discussion, for now please reference Github's default license.
 
  > ~~We are running on the GNU General Public License v3.0. Review section
  > 15, 16, and 17 of the GNU General Public License v3.0 before use.~~
 
-A mirror of this project can be found [here](https://git.hunterchasens.com/hchasens/OODMazeProject)
 
 ## Table of Contents
 
  1. Introduction
- 2. Table of Contents
- 3. Assignment Details
- 4. Thought Process
- 5. Design
- 6. Classes
- 7. Files and Organisation
- 8. Documentation and Logging
- 9. Compiling
- 10. Dependencies
- 11. Conclusion
+ 2. Licensing
+ 3. Table of Contents
+ 4. Assignment Details
+ 5. Thought Process
+ 6. Design
+ 7. Classes
+ 8. Files and Organisation
+ 9. Documentation and Logging
+ 10. Compiling
+ 11. Dependencies 
+ 12. Conclusion
 
 ## Assignment Details
 
