@@ -5,8 +5,8 @@ make:
 run:
 	java Driver
 
-run:
-	javadoc
+doc:
+	javadoc -d doc src/*.java
 
 clean:
 	rm *.class
