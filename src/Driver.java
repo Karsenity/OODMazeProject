@@ -15,7 +15,7 @@ public class Driver {
             grid.add(t3);
         }
         
-        grid.getTile(0, 0).removeWall(1);
+        grid.getTile(0, 0).removeWall(0);
         
         System.out.print(grid);
     }

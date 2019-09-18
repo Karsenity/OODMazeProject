@@ -44,9 +44,8 @@ public class TileGrid {
         // https://stackoverflow.com/questions/30219925/should-i-use-point-x-or-point-getx
         int startingX = stringPositions.get(t).x;
         int startingY = stringPositions.get(t).y;
-        int updatedRows = 0;
         String newRowString = t.getRowString(row);
-        gridStringRepresentation.get(startingY + updatedRows).set(startingX, newRowString);
+        gridStringRepresentation.get(startingY + row).set(startingX, newRowString);
     }
 
     /*
