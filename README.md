@@ -6,6 +6,8 @@ Maze Project for Object-Oriented Design class
 
 A mirror of this project can be found [here](https://git.hunterchasens.com/hchasens/OODMazeProject)
 
+Our API Documentation can be found [here](https://yoyou446.github.io/OODMazeProject/Driver.html)
+
 ***
 ## Licensing and Legal
 
@@ -66,6 +68,8 @@ Initial Maze Design is much more complex and is kept up to date. The version fou
 
 ***
 ## Classes
+Our API Documentation can be found [here](https://yoyou446.github.io/OODMazeProject/Driver.html)
+
 
 ### Interfaces
 #### Algorithm
