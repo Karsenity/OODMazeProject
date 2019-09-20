@@ -76,7 +76,11 @@ Initial Maze Design is much more complex and is kept up to date. The version fou
 ### Classes
 
 #### Maze
-Maze is our driver class. It contains the main method.
+* Maze is the Driver class.
+* Maze declares a two dimensional array of Squares (our maze)
+* Maze passes a cropped two dimensional array of Squares to TileGrid and prints what it returns
+  * Maze must make sure that the string returned can fit inside the terminal.  
+
 #### Tiles
 
 #### TileGrid

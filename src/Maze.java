@@ -18,21 +18,21 @@ class Maze {
 /**
  * mazeHeight is the number of colums of squares the maze will contian (not to be confused with characters)
  */
-int mazeWidth;
+public static int mazeWidth;
 /**
  * mazeWidth is the number of rows of squares the maze will contian (not to be confused with characters)
  */
-int mazeHeight;
+public static int mazeHeight;
 
 
 /**
  * terminalWidth is the number of characters the terminal can fit horisontaly.
  */
-int terminalWidth;
+public static int terminalWidth;
 /**
  * terminalHeight is the number of characters the terminal can fit verticly.
  */
-int terminalHeight;
+public static int terminalHeight;
 
 
 
@@ -40,20 +40,20 @@ int terminalHeight;
 /**
  * the Alorithm used to generate the maze
  */
-public Algorithm alg;
+public static Algorithm alg;
 
 
 
 /**
  * grid is a two dimensional array of Squares
  */
-public Square[][] grid;
+public static Square[][] grid;
 
 /**
  * Decleration of TileGrid
  * you can get the length of the array by using grid[0].length for the width ro grid[1].length for the y
  */
-public TileGrid tileGrid;
+public static TileGrid tileGrid;
 
 
 /**
@@ -61,10 +61,38 @@ public TileGrid tileGrid;
  * @param args [description]
  */
 public static void Main(String[] args){
-        //define members here
-
-
         //cetch args here
+        if(args.size != 0) {
+                for(int i = 0; i < args.size; i++) {
+                        if(args[i].compareTo("-h") == 0 || args[i].compareTo("--help") == 0)
+                                System.out.println("");
+
+                        /**
+                         * try and ceatch me in future!
+                         */
+                        if(args[i].compareTo("-x") == 0 || args[i].compareTo("-X") == 0)
+                                terminalWidth = Integer.parseInt(args[i+1]);
+
+                        if(args[i].compareTo("-y") == 0 || args[i].compareTo("-Y") == 0)
+                                terminalHeight = Integer.parseInt(args[i+1]);
+
+
+                        /**
+                         * try and ceatch me in future!
+                         */
+                        if(args[i].compareTo("-xm") == 0 || args[i].compareTo("-Xm") == 0)
+                                mazeWidth = Integer.parseInt(args[i+1]);
+
+                        if(args[i].compareTo("-ym") == 0 || args[i].compareTo("-Ym") == 0)
+                                mazeHeight = Integer.parseInt(args[i+1]);
+                }
+        }
+
+        //define members
+
+        //alg = new WillsonsAlgorithm();
+        //grid = new WillsonsSquare()[mazeWidth][mazeHeight];
+        tileGrid = new TileGrid();
 
 }
 
